@@ -67,6 +67,7 @@ public class HttpServer {
 
                 // Close the socket
                 socket.close();
+                //System.out.println("socket first closed <==");
 
                 //check if the previous URI is a shutdown command
                 // //System.out.println("request.getUri()：" + request.getUri());
@@ -74,7 +75,33 @@ public class HttpServer {
             } catch (IOException e) {
                 e.printStackTrace();
                 continue;
-            }
+            } /*finally {
+                if (socket!=null){
+                    try {
+                        socket.close();
+                        System.out.println("socket finally closed <==");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (inputStream != null) {
+                    try {
+                        inputStream.close();
+                        System.out.println("inputStream closed <==");
+                    } catch (IOException e) {
+                        System.out.println(e.toString());
+                    }
+                }
+                if (outputStream != null) {
+                    try {
+                        outputStream.close();
+                        System.out.println("outputStream closed <==");
+                    } catch (IOException e) {
+                        System.out.println(e.toString());
+                    }
+                }
+
+            }*/
         }
     }
 }
