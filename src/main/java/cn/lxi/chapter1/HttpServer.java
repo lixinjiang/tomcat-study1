@@ -52,6 +52,7 @@ public class HttpServer {
 
             try {
                 socket = serverSocket.accept();
+                System.out.println("create a new connection ......");
                 inputStream = socket.getInputStream();
                 outputStream = socket.getOutputStream();
 

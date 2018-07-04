@@ -12,7 +12,7 @@ import java.net.URLStreamHandler;
 
 /**
  * ServletProcessor1
- * description TODO
+ * description 用于处理 servlet 的 HTTP 请求
  * create by lxj 2018/7/3
  **/
 public class ServletProcessor1 {
@@ -31,6 +31,8 @@ public class ServletProcessor1 {
             String respository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString();
             // the code for forming the URL is taken from the addRepository method in
             // org.apache.catalina.loader.StandardClassLoader class.
+
+            //url构造方法如果前后两个参数传null，则会有重复的构造方法，将不知道加载哪个，所以第三个参数传一个类型，就知道是哪个构造器了
             urls[0] = new URL(null, respository, streamHandler);
             loader = new URLClassLoader(urls);
 

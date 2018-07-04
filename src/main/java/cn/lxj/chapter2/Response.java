@@ -73,8 +73,14 @@ public class Response implements ServletResponse {
         return null;
     }
 
+    //TODO 该方法重写，其他实现方法留空
+    //传递 true 作为第二个参数将会使任何 println 方法的调用都会刷新输出(output)。
+    //不过， print 方法不会刷新输出。
     public PrintWriter getWriter() throws IOException {
-        return null;
+        // autoflush is true, println() will flush,
+        // but print() will not.
+        writer = new PrintWriter(output, true);
+        return writer;
     }
 
     public void setCharacterEncoding(String s) {

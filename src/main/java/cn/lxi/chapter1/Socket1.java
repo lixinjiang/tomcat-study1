@@ -19,7 +19,7 @@ public class Socket1 {
         //socket读取流
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         //send an HTTP request to the web server
-        out.print("GET /index.jsp HTTP/1.1");
+        out.print("GET /index.html HTTP/1.1");
         out.println("Host: localhost:8080");
         out.println("Connection: Close");
         out.println();

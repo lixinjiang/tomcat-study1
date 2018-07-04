@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /**
  * StaticResourceProcessor
- * description TODO
+ * description 静态资源处理类
  * create by lxj 2018/7/3
  **/
 public class StaticResourceProcessor {
