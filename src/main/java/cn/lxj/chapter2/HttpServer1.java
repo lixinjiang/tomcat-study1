@@ -49,7 +49,7 @@ public class HttpServer1 {
 
             try {
                 socket = serverSocket.accept();
-                System.out.println("create a new socket ......");
+                System.out.println("create a new socket ==>");
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
 
@@ -73,6 +73,7 @@ public class HttpServer1 {
 
                 // Close the socket
                 socket.close();
+                System.out.println("socket closed!<==");
 
                 //check if the previous URI is a shutdown command
                 shutdown = request.getUri().equals(SHUTDOWN_COMMAND);

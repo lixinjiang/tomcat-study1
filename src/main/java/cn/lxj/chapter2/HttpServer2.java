@@ -41,6 +41,7 @@ public class HttpServer2 {
             OutputStream output = null;
             try {
                 socket = serverSocket.accept();
+                System.out.println(this.getClass().getName() + " create a new Socket");
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
 
@@ -64,6 +65,7 @@ public class HttpServer2 {
 
                 // Close the socket
                 socket.close();
+                System.out.println(this.getClass().getName() + " closed!");
                 //check if the previous URI is a shutdown command
                 shutdown = request.getUri().equals(SHUTDOWN_COMMAND);
             } catch (Exception e) {

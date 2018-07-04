@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * RequestFacade
- * description TODO
+ * description 实现ServletRequest，封装来由方法，提供安全的操作
  * create by lxj 2018/7/3
  **/
 public class RequestFacade implements ServletRequest{
