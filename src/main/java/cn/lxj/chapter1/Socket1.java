@@ -1,4 +1,4 @@
-package cn.lxi.chapter1;
+package cn.lxj.chapter1;
 
 import java.io.*;
 import java.net.Socket;
