@@ -11,12 +11,10 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-            <scope>compile</scope>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>how-tomcat-works</artifactId>
+            <version>bonusli-1</version>
         </dependency>
     </dependencies>
 </project>

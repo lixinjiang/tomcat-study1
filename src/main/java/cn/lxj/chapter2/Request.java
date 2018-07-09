@@ -15,15 +15,14 @@ import java.util.Map;
  * create by lxj 2018/7/3
  **/
 public class Request implements ServletRequest {
-
     private InputStream input;
     private String uri;
 
-    public Request (InputStream inputStream){
-        this.input = inputStream;
+    public Request(InputStream input) {
+        this.input = input;
     }
 
-    public String getUri(){
+    public String getUri() {
         return uri;
     }
 
@@ -58,27 +57,31 @@ public class Request implements ServletRequest {
     }
 
     /* implementation of the ServletRequest*/
-    public Object getAttribute(String s) {
+    public Object getAttribute(String attribute) {
         return null;
     }
 
-    public Enumeration<String> getAttributeNames() {
+    public Enumeration getAttributeNames() {
         return null;
+    }
+
+    public String getRealPath(String path) {
+        return null;
+    }
+
+    public RequestDispatcher getRequestDispatcher(String path) {
+        return null;
+    }
+
+    public boolean isSecure() {
+        return false;
     }
 
     public String getCharacterEncoding() {
         return null;
     }
 
-    public void setCharacterEncoding(String s) throws UnsupportedEncodingException {
-
-    }
-
     public int getContentLength() {
-        return 0;
-    }
-
-    public long getContentLengthLong() {
         return 0;
     }
 
@@ -90,23 +93,43 @@ public class Request implements ServletRequest {
         return null;
     }
 
-    public String getParameter(String s) {
+    public Locale getLocale() {
         return null;
     }
 
-    public Enumeration<String> getParameterNames() {
+    public Enumeration getLocales() {
         return null;
     }
 
-    public String[] getParameterValues(String s) {
-        return new String[0];
+    public String getParameter(String name) {
+        return null;
     }
 
-    public Map<String, String[]> getParameterMap() {
+    public Map getParameterMap() {
+        return null;
+    }
+
+    public Enumeration getParameterNames() {
+        return null;
+    }
+
+    public String[] getParameterValues(String parameter) {
         return null;
     }
 
     public String getProtocol() {
+        return null;
+    }
+
+    public BufferedReader getReader() throws IOException {
+        return null;
+    }
+
+    public String getRemoteAddr() {
+        return null;
+    }
+
+    public String getRemoteHost() {
         return null;
     }
 
@@ -122,88 +145,14 @@ public class Request implements ServletRequest {
         return 0;
     }
 
-    public BufferedReader getReader() throws IOException {
-        return null;
+    public void removeAttribute(String attribute) {
     }
 
-    public String getRemoteAddr() {
-        return null;
+    public void setAttribute(String key, Object value) {
     }
 
-    public String getRemoteHost() {
-        return null;
+    public void setCharacterEncoding(String encoding)
+            throws UnsupportedEncodingException {
     }
 
-    public void setAttribute(String s, Object o) {
-
-    }
-
-    public void removeAttribute(String s) {
-
-    }
-
-    public Locale getLocale() {
-        return null;
-    }
-
-    public Enumeration<Locale> getLocales() {
-        return null;
-    }
-
-    public boolean isSecure() {
-        return false;
-    }
-
-    public RequestDispatcher getRequestDispatcher(String s) {
-        return null;
-    }
-
-    public String getRealPath(String s) {
-        return null;
-    }
-
-    public int getRemotePort() {
-        return 0;
-    }
-
-    public String getLocalName() {
-        return null;
-    }
-
-    public String getLocalAddr() {
-        return null;
-    }
-
-    public int getLocalPort() {
-        return 0;
-    }
-
-    public ServletContext getServletContext() {
-        return null;
-    }
-
-    public AsyncContext startAsync() throws IllegalStateException {
-        return null;
-    }
-
-    public AsyncContext startAsync(ServletRequest servletRequest, ServletResponse servletResponse) throws
-            IllegalStateException {
-        return null;
-    }
-
-    public boolean isAsyncStarted() {
-        return false;
-    }
-
-    public boolean isAsyncSupported() {
-        return false;
-    }
-
-    public AsyncContext getAsyncContext() {
-        return null;
-    }
-
-    public DispatcherType getDispatcherType() {
-        return null;
-    }
 }

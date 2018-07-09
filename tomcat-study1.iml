@@ -11,6 +11,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="module" module-name="how_tomcat_works" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: javax.management:mx4j:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.util:tomcat-util:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-digester:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-beanutils:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-modeler:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-daemon:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.regexp:regexp-1.2:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections:bonusli-1" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
   </component>
 </module>
